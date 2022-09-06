@@ -1,0 +1,140 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HEY </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HEY * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOWDY </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOWDY * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm doing well, thanks for asking!</template></category>
+
+<category> <pattern> HOW ARE YOU * </pattern>
+  <template><srai>HOW ARE YOU</srai></template></category>
+
+<category> <pattern> HOW ARE YOU DOING </pattern>
+  <template><srai>HOW ARE YOU</srai></template></category>
+
+<category> <pattern> HOW ARE YOU DOING * </pattern>
+  <template><srai>HOW ARE YOU</srai></template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss?</template></category>
+
+<category><pattern> IM FINE * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> I'M FINE * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> I AM GOOD * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> IM GOOD * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> I'M GOOD * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> I'M GOOD, * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> IM GOOD, * </pattern>
+  <template><srai>I AM FINE</srai></template></category>
+
+<category><pattern> BYE </pattern>
+  <template>{0}Bye! Nice talking to you. You take care now. o7</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<!-- Types -->
+<category> <pattern> WHAT TYPE IS * </pattern>
+  <template>{1}<star index="1"/></template> </category>
+
+<category> <pattern> WHAT POKEMON TYPE IS * </pattern>
+  <template><srai>WHAT TYPE IS <star/></srai></template> </category>
+
+<!-- Super Effective -->
+<category> <pattern> WHAT IS SUPEREFFECTIVE AGAINST * </pattern>
+  <template>{2}<star index="1"/></template> </category>
+
+<category> <pattern> WHAT IS SUPER EFFECTIVE AGAINST * </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS * WEAK TO </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS SUPEREFFECTIVE AGAINST * TYPES </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS SUPER EFFECTIVE AGAINST * TYPES </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS SUPEREFFECTIVE AGAINST * TYPE POKEMON </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS SUPER EFFECTIVE AGAINST * TYPE POKEMON </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<category> <pattern> WHAT ARE * TYPES WEAK TO </pattern>
+  <template><srai>WHAT IS SUPEREFFECTIVE AGAINST <star/></srai></template> </category>
+
+<!-- Pokedex entries -->
+<category> <pattern> TELL ME ABOUT * </pattern>
+  <template>{3}<star index="1"/></template> </category>
+
+<category> <pattern> TELL ME MORE ABOUT * </pattern>
+   <template><srai>TELL ME ABOUT <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS THERE TO KNOW ABOUT * </pattern>
+   <template><srai>TELL ME ABOUT <star/></srai></template> </category>
+
+<category> <pattern> WHAT IS THE POKEDEX ENTRY FOR * </pattern>
+   <template><srai>TELL ME ABOUT <star/></srai></template> </category>
+
+<!-- Image Classifier -->
+<category> <pattern> WHAT IS THIS IMAGE * </pattern>
+  <template>{4}<star index="1"/></template> </category>
+
+<category> <pattern> WHAT POKEMON IS THIS * </pattern>
+   <template><srai>WHAT IS THIS IMAGE <star/></srai></template> </category>
+
+<!-- Azure Vision -->
+<category> <pattern> DESCRIBE THIS IMAGE * </pattern>
+  <template>{5}<star index="1"/></template> </category>
+
+<category> <pattern> DESCRIBE THIS POKEMON * </pattern>
+   <template><srai>DESCRIBE THIS IMAGE <star/></srai></template> </category>
+
+<!-- Knowledgebase -->
+<category> <pattern> I KNOW THAT * IS *</pattern>
+  <template>{97}<star index="1"/> is <star index="2"/></template> </category>
+
+<category> <pattern> CHECK THAT * IS *</pattern>
+  <template>{98}<star index="1"/> is <star index="2"/></template> </category>
+
+<!-- Unknown Input -->
+<category> <pattern> * </pattern>
+  <template>{99}<star index="1"/></template> </category>
+
+</aiml>
